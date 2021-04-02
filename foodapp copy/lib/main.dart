@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
+       debugShowCheckedModeBanner: false
     );
   }
 }
@@ -33,22 +34,25 @@ class MyHomePage extends StatelessWidget{
      
   @override
   Widget build(BuildContext context) {
-      APIProvider apiProvider = APIProvider();
+//       APIProvider apiProvider = APIProvider();
 
+// print("call api");
 // callToApi(apiProvider);
 //  print(apiProvider.getFoodRec("https://dev-rubix.7sugar.com/api/flutter_assignment")); 
 
 
     return Scaffold(
       appBar: AppBar(
-   
+        backgroundColor: Colors.amberAccent,
         title: Text("Food App"),
+      
       ),
       body: BlocProvider(
 
         create: (context)=> FoodrecBloc(),
-        child: BuildBody(),
-        // BuildBody() ,
+        child: 
+        // Container(),
+        BuildBody() ,
                  
       ),
    // This trailing comma makes auto-formatting nicer for build methods.
@@ -59,6 +63,7 @@ class MyHomePage extends StatelessWidget{
 // Future<void> callToApi(APIProvider apiProvider) async{
 
 // dynamic app;
+// print("dunc called");
 // app= await apiProvider.getFoodRec("https://dev-rubix.7sugar.com/api/flutter_assignment");
 
 // // print("data");

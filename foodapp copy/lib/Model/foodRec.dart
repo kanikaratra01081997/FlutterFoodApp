@@ -1,12 +1,13 @@
+import './Ingre.dart';
 class FoodRec{
 final String calorie;
 final String time;
 final String name;
 final String imageUrl;
-// List<String> ty;
+List<Ingre> ing;
 
-FoodRec(this.calorie, this.time, this.name, this.imageUrl
-// this.ty
+FoodRec(this.calorie, this.time, this.name, this.imageUrl,
+this.ing
 );
 
 }

@@ -14,7 +14,6 @@ class GetFoodRec extends FoodrecEvent{
   GetFoodRec(this.url);
 
   @override
-  // TODO: implement props
   List<Object> get props =>  [url];
   
 
